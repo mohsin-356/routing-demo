@@ -1,3 +1,6 @@
+export const metadata = {
+  title: "Saeed's App"
+};
 export default function Home() {
     return (
         <main>
