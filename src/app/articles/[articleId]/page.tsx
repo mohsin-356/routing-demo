@@ -1,10 +1,9 @@
 import Link from "next/link";
 
 export default function NewsArticle(
-    { params, searchParams }: 
-    { params: Promise<{ articleID: string }>, searchParams: { lang?: string } }
-)
-{
+    { params, searchParams }:
+        { params: Promise<{ articleID: string }>, searchParams: { lang?: "en" | "fr" | "es" } }
+) {
     console.log(params);
     console.log(searchParams);
     return <div>
